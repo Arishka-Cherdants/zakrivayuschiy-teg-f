@@ -9,8 +9,8 @@
   --accent__color: #00cc14;
   --wght__main-text: 465;
   --wght__card-header: 785;
-  --bg__image: repeating-linear-gradient(to right, #000, transparent 2px),
-    repeating-linear-gradient(to bottom, #000, transparent 2px),
+  --bg__image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
     linear-gradient(#007f0c, #004306);
   --fill__heart-color: red;
   --contour__heart-color: #000;
@@ -22,8 +22,8 @@
   --accent__color: #000;
   --wght__main-text: 400;
   --wght__card-header: 700;
-  --bg__image: repeating-linear-gradient(to right, #d3d3d3, transparent 2px),
-    repeating-linear-gradient(to bottom, #d3d3d3, transparent 2px),
+  --bg__image: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --fill__heart-color: red;
   --contour__heart-color: #000;
@@ -36,8 +36,8 @@
     --accent__color: #00cc14;
     --wght__main-text: 465;
     --wght__card-header: 785;
-    --bg__image: repeating-linear-gradient(to right, #000, transparent 2px),
-      repeating-linear-gradient(to bottom, #000, transparent 2px),
+    --bg__image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
       linear-gradient(#007f0c, #004306);
     --fill__heart-color: red;
     --contour__heart-color: #000;
