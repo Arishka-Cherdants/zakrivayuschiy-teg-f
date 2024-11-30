@@ -36,7 +36,7 @@
     --accent__color: #00cc14;
     --wght__main-text: 465;
     --wght__card-header: 785;
-    --bg__image: repeating-linear-gradient(to right, #000 x, transparent 2px),
+    --bg__image: repeating-linear-gradient(to right, #000, transparent 2px),
       repeating-linear-gradient(to bottom, #000, transparent 2px),
       linear-gradient(#007f0c, #004306);
     --fill__heart-color: red;
