@@ -19,10 +19,11 @@
   min-block-size: 100dvb;
   font-family: var(--main__font), Arial, Helvetica, sans-serif;
   font-weight: var(--wght__main-text);
+  font-variation-settings: 'wght' var(--wght__main-text);
   background-color: var(--bg__color);
   color: var(--accent__color);
   background-image: var(--bg__image);
-  background-image: cover;
+  background-size: cover;
 }
 
 .content {
@@ -137,6 +138,7 @@
 
 .header__block {
   font-weight: var(--wght__card-header);
+  font-variation-settings: 'wght' var(--wght__card-header);
   font-size: 18px;
   line-height: 21.78px;
   padding: 5px 24px 5px 10px;
@@ -209,6 +211,7 @@
 .main__text {
   font-size: 18px;
   font-weight: var(--wght__main-text);
+  font-variation-settings: 'wght' var(--wght__main-text);
   display: grid;
   row-gap: 27px;
   margin: 25px;
@@ -411,11 +414,6 @@
 @media (width < 376px) {
   .content {
     --main__content: 100%;
-  }
-
-  .img__floppy {
-    height: 28px;
-    width: 28px;
   }
 
   .dialog__window[open] {
