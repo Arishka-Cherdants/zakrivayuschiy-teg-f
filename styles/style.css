@@ -391,7 +391,6 @@
   column-gap: 20px;
   row-gap: 30px;
   padding: 28px 28px;
-  overflow: hidden;
   width: clamp(21.313rem, 1.127vw + 21.048rem, 22.063rem);
 }
 
