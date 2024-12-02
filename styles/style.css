@@ -442,6 +442,7 @@ dialog::backdrop {
 
   .dialog__window[open] {
     padding: 30px 42px;
+    grid-template-columns: 1fr 5fr;
   }
 
   .header__block {
@@ -458,9 +459,5 @@ dialog::backdrop {
     width: 28px;
     height: 28px;
     justify-self: center;
-  }
-
-  .dialog__window[open] {
-    grid-template-columns: 1fr 5fr;
   }
 }
