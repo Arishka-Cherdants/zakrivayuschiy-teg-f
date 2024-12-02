@@ -124,6 +124,7 @@
   content: "▶";
   position: absolute;
   animation: moving__arrow 0.5s ease-in-out infinite;
+  animation-direction: alternate;
 }
 
 .cards__list {
@@ -312,6 +313,7 @@
   block-size: fit-content;
   color: var(--button__text-color);
   mix-blend-mode: difference;
+  line-height: 12.6px;
 }
 
 .buttons {
@@ -333,7 +335,7 @@
 .save__section {
   display: grid;
   justify-content: center;
-  padding-top: 48px;
+  padding-top: 49px;
   padding-bottom: 50px;
 }
 
@@ -348,7 +350,7 @@
 
 .button__floppy {
   display: inline-block;
-  padding: 13px 21px;
+  padding: 13.5px 21px;
   position: relative;
   transition: 0.3s ease;
   background-color: var(--bg__color);
@@ -383,12 +385,12 @@
   inset: 0;
   display: grid;
   grid-template-columns: 1fr 6fr;
-  grid-template-rows: max-content min-content;
+  grid-template-rows: max-content min -content;
   background-color: var(--bg__color);
   color: var(--accent__color);
-  column-gap: 12px;
+  column-gap: 20px;
   row-gap: 30px;
-  padding: 30px 30px;
+  padding: 28px 28px;
   overflow: hidden;
   width: clamp(21.313rem, 1.127vw + 21.048rem, 22.063rem);
 }
@@ -425,10 +427,12 @@ dialog::backdrop {
 }
 
 .dialog__button {
-  background-color: transparent;
-  border: 2px solid var(--accent__color);
-  padding: 8.5px clamp(6.875rem, 1.69vw + 6.479rem, 8rem);
+  outline: 2px solid var(--accent__color);
+  padding: 8px 128.5px;
   cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  align-self: end;
 }
 
 @media (width < 376px) {
@@ -441,7 +445,8 @@ dialog::backdrop {
   }
 
   .dialog__window[open] {
-    padding: 30px 42px;
+    min-width: 341px;
+    padding: 28px 39px;
     grid-template-columns: 1fr 5fr;
   }
 
@@ -450,6 +455,7 @@ dialog::backdrop {
   }
 
   .button__floppy {
+    padding: 15px 20.5px 15px 19.5px;
     display: grid;
     justify-content: center;
     row-gap: 8px;
@@ -459,5 +465,9 @@ dialog::backdrop {
     width: 28px;
     height: 28px;
     justify-self: center;
+  }
+
+  .dialog__button {
+    padding: 8px 112.5px;
   }
 }

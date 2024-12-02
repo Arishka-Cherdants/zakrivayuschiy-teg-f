@@ -15,12 +15,9 @@
 @keyframes moving__arrow {
   from {
     transform: translate(-23px);
-  }
-  50% {
-    transform: translate(-19px);
-  }
+  } 
   to {
-    transform: translate(-23px);
+    transform: translate(-19px);
   }
 }
 
